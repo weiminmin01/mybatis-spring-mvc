@@ -1,6 +1,7 @@
 package cn.smbms.dao;
 
 import cn.smbms.beans.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,5 +15,7 @@ public interface UserDao {
     public void  updateUser(User user);
 
     public List<User> getUserList(User user);
+
+   User  dologin(@Param("uc") String userCode,@Param("password") String userPassword);
 
 }

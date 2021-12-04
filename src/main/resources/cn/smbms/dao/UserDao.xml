@@ -18,5 +18,10 @@
     <select id="getUserList" parameterType="User" resultType="User" >
         select * from smbms_user ;
     </select>
+    
+    <select id="dologin" resultType="User">
+        select * from smbms_user where userCode=#{uc} and userPassword=#{password}
+    </select>
+    
 
 </mapper>

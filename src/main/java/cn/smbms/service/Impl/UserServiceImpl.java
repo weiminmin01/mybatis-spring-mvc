@@ -36,4 +36,10 @@ public class UserServiceImpl implements UserService {
      }
         return userList;
     }
+
+    @Override
+    public User  dologin(String userCode, String userPassword) {
+      User user= userDao.dologin(userCode,userPassword);
+       return user;
+    }
 }

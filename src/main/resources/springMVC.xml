@@ -20,4 +20,6 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+<!--为前端页面配置静态资源-->
+    <mvc:resources mapping="/statics/**" location="/statics/"/>
 </beans>

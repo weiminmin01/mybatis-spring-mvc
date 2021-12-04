@@ -13,4 +13,5 @@ public interface UserService {
 
     public List<User> getUserList(User user);
 
+     User  dologin(String userCode,String userPassword);
 }
